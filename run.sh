@@ -3,6 +3,11 @@
 # Set script to exit on error
 set -e
 
+if [ ! -d ".venv" ]; then
+    echo "Virtual environment not found. Running setup.sh..."
+    bash setup.sh
+fi
+
 # Activate virtual environment
 source .venv/bin/activate
 

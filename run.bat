@@ -1,6 +1,12 @@
 @echo off
 setlocal
 
+:: Check if virtual environment exists
+if not exist .venv (
+    echo Virtual environment not found. Running setup.bat...
+    call setup.bat
+)
+
 :: Activate virtual environment
 call .venv\Scripts\activate.bat
 
