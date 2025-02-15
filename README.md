@@ -1,47 +1,71 @@
-# Software Inc Mod Creator App
+# 🛠️ Software Inc Mod Creator App  
 
-This is a fork of the [Software Inc Mod Creator App](https://github.com/KeyMillion/Software-Inc-Mod-Creator) that intends to bring a plug-and-play experience for users of all skill-levels. I would like to give thanks the original dev [KeyMillion](https://github.com/KeyMillion) for providing the foundation for this app. 
+This project is a fork of the [Software Inc Mod Creator App](https://github.com/KeyMillion/Software-Inc-Mod-Creator), designed to provide a **plug-and-play experience** for users of all skill levels.  
 
-⬇️ **Check out the dev roadmap to see whats the future holds**
+A huge thanks to the original developer, [KeyMillion](https://github.com/KeyMillion), for laying the foundation for this app!  
 
-[Development Roadmap](https://trello.com/invite/b/67b04d343e8125f3c3b86cf7/ATTIae9cb82c3ac9c18a87bf807821e8e70863CB36B4/simca-dev-roadmap)
+---
+>📌 **Want to see what's next? Check out the development roadmap!**  
 
-## Table of Contents
+[ Development Roadmap](https://trello.com/invite/b/67b04d343e8125f3c3b86cf7/ATTIae9cb82c3ac9c18a87bf807821e8e70863CB36B4/simca-dev-roadmap)
 
->- [Getting Started](#getting-started)
->    - [Installation](#installation)
->- [Creating A Mod](#creating-a-mod)
->    - [Software Type](#software-type)
->    - [Company Type](#company-type)
->    - [Name Generator](#name-generator)
->    - [Software Type Mini](#softare-type-mini)
+> **❓ Need info about the game? Visit the official website below.**
+
+[Software Inc Offical Site](https://softwareinc.coredumping.com/)
+
+
 
 ---
 
-## Getting Started
+## 📖 Table of Contents  
 
-Installing and running the app is pretty straight forward. You can find a detailed, step-by-step set of instructions below to help you get started.
+- [Getting Started](#getting-started)  
+  - [Installation](#installation)  
+- [Creating a Mod](#creating-a-mod)  
+  - [Software Type](#software-type)  
+  - [Company Type](#company-type)  
+  - [Name Generator](#name-generator)  
+  - [Software Type Mini](#software-type-mini)  
 
-### Installation
+---
 
-- **Step 1:** Clone the repo
+## 🚀 Getting Started  
+
+Setting up and running the app is **simple and straightforward**! Follow the step-by-step guide below to get started.  
+
+### 🏗️ Installation  
+
+1️⃣ **Clone the repository:**  
 ```bash
 git clone https://github.com/0x00ASTRA/Software-Inc-Mod-Creator.git
-```
-- **Step 2:** Setup the virtual env ( python3.12 )
+```  
+
+2️⃣ **Set up the virtual environment (Python 3.12):**  
 ```bash
 cd Software-Inc-Mod-Creator && python3 -m venv .venv
-``` 
-- **Step 3:** Install Dependencies
+```  
+
+3️⃣ **Install dependencies:**  
 ```bash
 pip3 install -r requirements.txt
-```
-- **Step 4:** Run the app
-```bash
-fastapi dev src/app.py
-```
-- **Step 5:** Open the app and create a mod
-[Open Sofware Inc Mod Creator App]("http://localhost:8000/")
+```  
+
+4️⃣ **Run the app:**  
+
+- **Windows:**  
+  ```bash
+  ./run.bat
+  ```  
+
+- **MacOS / Linux:**  
+  ```bash
+  ./run.sh
+  ```  
+
+5️⃣ **Open the app and start creating your mod!**  
+
+- **Windows:** [Open Software Inc Mod Creator App](http://127.0.0.1:8000/)  
+- **MacOS / Linux:** [Open Software Inc Mod Creator App](http://localhost:8000/)  
 
 ---
 
@@ -58,3 +82,11 @@ To Be Continued
 
 ### Softare Type Mini
 To Be Continued
+
+---
+
+*This document was refined with the help of OpenAI's ChatGPT to ensure a smooth and intuitive reading experience. As a developer—not a writer—this assistance helps me communicate instructions clearly and effectively for users of all skill levels.*
+
+[OpenAI Website](https://openai.com)
+
+[Chat GPT](https://chat.com)
