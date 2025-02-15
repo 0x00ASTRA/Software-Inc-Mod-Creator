@@ -1,7 +1,7 @@
 <html>
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
+	<style>
         body {
             display: flex;
             justify-content: center;
@@ -52,7 +52,7 @@
 <body>
     <div class="container mt-5">
 	<h1 class="mb-3">Software Inc Easy Software Type</h1>
-	 <a href="SoftwareIncModCreatorMainPage.html" class="home-button">Home</a>
+ <a href="home" class="home-button">Home</a>
         <form id="dataForm">
             <div class="mb-3">
                 <label for="Name" class="form-label">Name of Software</label>
@@ -62,7 +62,7 @@
                 <label for="Description" class="form-label">Description</label>
                 <textarea class="form-control" id="Description" name="Description" rows="2"></textarea>
             </div>
-             <div class="mb-3">
+            <div class="mb-3">
                 <label for="Random" class="form-label">Random</label>
 				<p>How much sales will vary. When a product is released, a random number is chosen and it is weighted using this number, and it will be multiplied for all sales. As an example, for games it is 0.5, since you can't count on good sales for a game, but for operating systems, it is 0, since they are generally in demand and necessary for a computer to work, so sales won't vary that much. Note that the effect of this value is very small as of Alpha 11.</p>
                 <textarea class="form-control" id="Random" name="Random" rows="1" placeholder="Enter a number between 0.0 and 1.0"></textarea>
@@ -110,6 +110,7 @@
 				<p>The name generator to use for simulated companies or for when the player clicks the name button in the design document. (Will be used for all software categories which don't have one defined</p>
                 <textarea class="form-control" id="NameGenerator" name="NameGenerator" rows="1" placeholder="Name Of The File That Generates The Name"></textarea>
             </div>
+
             <!-- Feature 1 -->
             <div class="mb-3">
                 <h2>Feature 1</h2>
@@ -178,265 +179,65 @@
             <div class="mb-3">
                 <h2>Subfeature 2</h2>
                 <label for="f1Subfeature2Name" class="form-label">Name</label>
+				<p>The name of the feature as it will appear in feature panel in the design document window.</p>
                 <textarea class="form-control" id="f1Subfeature2Name" name="f1Subfeature2Name" rows="1"></textarea>
             </div>
             <div class="mb-3">
                 <label for="f1Subfeature2Spec" class="form-label">Level</label>
+				<p>The level of the feature, which controls who can work on it. Level 2 features give more submarket satisfaction than level 1 features. Level 3 features don't satisfy submarkets at all, but they have custom scripts.</p>
                 <textarea class="form-control" id="f1Subfeature2Spec" name="f1Subfeature2Spec" rows="1"></textarea>
             </div>
             <div class="mb-3">
                 <label for="f1Subfeature2Description" class="form-label">Description</label>
+				<p>The contents of the tooltip that will appear when hovering over the feature in the design document window.</p>
                 <textarea class="form-control" id="f1Subfeature2Description" name="f1Subfeature2Description" rows="2"></textarea>
             </div>
             <div class="mb-3">
                 <label for="f1Subfeature2DevTime" class="form-label">Dev Time</label>
+				<p>	How many months it takes to develop this feature.</p>
                 <input type="number" class="form-control" id="f1Subfeature2DevTime" name="f1Subfeature2DevTime">
             </div>
             <div class="mb-3">
                 <label for="f1Subfeature2CodeArt" class="form-label">Code Art</label>
+				<p>The coding to art balancing of the feature. 1 will mean this feature only requires programmers whereas 0 will mean it only requires artists, and 0.5 means a little bit of both.</p>
                 <input type="text" class="form-control" id="f1Subfeature2CodeArt" name="f1Subfeature2CodeArt">
             </div>
             <div class="mb-3">
                 <label for="f1Subfeature2Submarkets" class="form-label">Submarkets</label>
+				<p>A list of 3 values determining the submarket ratio, i.e. how this feature satisfies the submarkets. These three values are normalized, so you can put in any number. 3, 4 and 5 would result in 3/12, 4/12 and 5/12.</p>
                 <textarea class="form-control" id="f1Subfeature2Submarkets" name="f1Subfeature2Submarkets" rows="1"></textarea>
             </div>
 			<!-- Subfeature 1 -->
             <div class="mb-3">
                 <h2>Subfeature 3</h2>
                 <label for="f1Subfeature3Name" class="form-label">Name</label>
+				<p>The name of the feature as it will appear in feature panel in the design document window.</p>
                 <textarea class="form-control" id="f1Subfeature3Name" name="f1Subfeature3Name" rows="1"></textarea>
             </div>
             <div class="mb-3">
                 <label for="f1Subfeature3Spec" class="form-label">Level</label>
+				<p>The level of the feature, which controls who can work on it. Level 2 features give more submarket satisfaction than level 1 features. Level 3 features don't satisfy submarkets at all, but they have custom scripts.</p>
                 <textarea class="form-control" id="f1Subfeature3Spec" name="f1Subfeature3Spec" rows="1"></textarea>
             </div>
             <div class="mb-3">
                 <label for="f1Subfeature3Description" class="form-label">Description</label>
+				<p>The contents of the tooltip that will appear when hovering over the feature in the design document window.</p>
                 <textarea class="form-control" id="f1Subfeature3Description" name="f1Subfeature3Description" rows="2"></textarea>
             </div>
             <div class="mb-3">
                 <label for="f1Subfeature3DevTime" class="form-label">Dev Time</label>
+				<p>	How many months it takes to develop this feature.</p>
                 <input type="number" class="form-control" id="f1Subfeature3DevTime" name="f1Subfeature3DevTime">
             </div>
             <div class="mb-3">
                 <label for="f1Subfeature3CodeArt" class="form-label">Code Art</label>
+				<p>The coding to art balancing of the feature. 1 will mean this feature only requires programmers whereas 0 will mean it only requires artists, and 0.5 means a little bit of both.</p>
                 <input type="text" class="form-control" id="f1Subfeature3CodeArt" name="f1Subfeature3CodeArt">
             </div>
             <div class="mb-3">
                 <label for="f1Subfeature3Submarkets" class="form-label">Submarkets</label>
+				<p>A list of 3 values determining the submarket ratio, i.e. how this feature satisfies the submarkets. These three values are normalized, so you can put in any number. 3, 4 and 5 would result in 3/12, 4/12 and 5/12.</p>
                 <textarea class="form-control" id="f1Subfeature3Submarkets" name="f1Subfeature3Submarkets" rows="1"></textarea>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="mb-3">
-                <h2>Feature 2</h2>
-                <label for="Feature2Name" class="form-label">Name</label>
-                <textarea class="form-control" id="Feature2Name" name="Feature2Name" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="Feature2Spec" class="form-label">Spec</label>
-                <textarea class="form-control" id="Feature2Spec" name="Feature2Spec" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="Feature2Description" class="form-label">Description</label>
-                <textarea class="form-control" id="Feature2Description" name="Feature2Description" rows="2"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="Feature2DevTime" class="form-label">Dev Time</label>
-                <input type="number" class="form-control" id="Feature2DevTime" name="Feature2DevTime">
-            </div>
-            <div class="mb-3">
-                <label for="Feature2CodeArt" class="form-label">Code Art</label>
-                <input type="text" class="form-control" id="Feature2CodeArt" name="Feature2CodeArt">
-            </div>
-            <div class="mb-3">
-                <label for="Feature2Submarkets" class="form-label">Submarkets</label>
-                <textarea class="form-control" id="Feature2Submarkets" name="Feature2Submarkets" rows="1"></textarea>
-            </div>
-			
-			<!-- Subfeature 1 -->
-            <div class="mb-3">
-                <h2>Subfeature 1</h2>
-                <label for="f2Subfeature1Name" class="form-label">Name</label>
-                <textarea class="form-control" id="f2Subfeature1Name" name="f2Subfeature1Name" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature1Spec" class="form-label">Level</label>
-                <textarea class="form-control" id="f2Subfeature1Spec" name="f2Subfeature1Spec" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature1Description" class="form-label">Description</label>
-                <textarea class="form-control" id="f2Subfeature1Description" name="f2Subfeature1Description" rows="2"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature1DevTime" class="form-label">Dev Time</label>
-                <input type="number" class="form-control" id="f2Subfeature1DevTime" name="f2Subfeature1DevTime">
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature1CodeArt" class="form-label">Code Art</label>
-                <input type="text" class="form-control" id="f2Subfeature1CodeArt" name="f2Subfeature1CodeArt">
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature1Submarkets" class="form-label">Submarkets</label>
-                <textarea class="form-control" id="f2Subfeature1Submarkets" name="f2Subfeature1Submarkets" rows="1"></textarea>
-            </div>
-			<!-- Subfeature 2 -->
-            <div class="mb-3">
-                <h2>Subfeature 2</h2>
-                <label for="f2Subfeature2Name" class="form-label">Name</label>
-                <textarea class="form-control" id="f2Subfeature2Name" name="f2Subfeature2Name" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature2Spec" class="form-label">Level</label>
-                <textarea class="form-control" id="f2Subfeature2Spec" name="f2Subfeature2Spec" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature2Description" class="form-label">Description</label>
-                <textarea class="form-control" id="f2Subfeature2Description" name="f2Subfeature2Description" rows="2"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature2DevTime" class="form-label">Dev Time</label>
-                <input type="number" class="form-control" id="f2Subfeature2DevTime" name="f2Subfeature2DevTime">
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature2CodeArt" class="form-label">Code Art</label>
-                <input type="text" class="form-control" id="f2Subfeature2CodeArt" name="f2Subfeature2CodeArt">
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature2Submarkets" class="form-label">Submarkets</label>
-                <textarea class="form-control" id="f2Subfeature2Submarkets" name="f2Subfeature2Submarkets" rows="1"></textarea>
-            </div>
-			<!-- Subfeature 1 -->
-            <div class="mb-3">
-                <h2>Subfeature 3</h2>
-                <label for="f2Subfeature3Name" class="form-label">Name</label>
-                <textarea class="form-control" id="f2Subfeature3Name" name="f2Subfeature3Name" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature3Spec" class="form-label">Level</label>
-                <textarea class="form-control" id="f2Subfeature3Spec" name="f2Subfeature3Spec" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature3Description" class="form-label">Description</label>
-                <textarea class="form-control" id="f2Subfeature3Description" name="f2Subfeature3Description" rows="2"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature3DevTime" class="form-label">Dev Time</label>
-                <input type="number" class="form-control" id="f2Subfeature3DevTime" name="f2Subfeature3DevTime">
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature3CodeArt" class="form-label">Code Art</label>
-                <input type="text" class="form-control" id="f2Subfeature3CodeArt" name="f2Subfeature3CodeArt">
-            </div>
-            <div class="mb-3">
-                <label for="f2Subfeature3Submarkets" class="form-label">Submarkets</label>
-                <textarea class="form-control" id="f2Subfeature3Submarkets" name="f2Subfeature3Submarkets" rows="1"></textarea>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="mb-3">
-                <h2>Feature 3</h2>
-                <label for="Feature3Name" class="form-label">Name</label>
-                <textarea class="form-control" id="Feature3Name" name="Feature3Name" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="Feature3Spec" class="form-label">Spec</label>
-                <textarea class="form-control" id="Feature3Spec" name="Feature3Spec" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="Feature3Description" class="form-label">Description</label>
-                <textarea class="form-control" id="Feature3Description" name="Feature3Description" rows="2"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="Feature3DevTime" class="form-label">Dev Time</label>
-                <input type="number" class="form-control" id="Feature3DevTime" name="Feature3DevTime">
-            </div>
-            <div class="mb-3">
-                <label for="Feature3CodeArt" class="form-label">Code Art</label>
-                <input type="text" class="form-control" id="Feature3CodeArt" name="Feature3CodeArt">
-            </div>
-            <div class="mb-3">
-                <label for="Feature3Submarkets" class="form-label">Submarkets</label>
-                <textarea class="form-control" id="Feature3Submarkets" name="Feature3Submarkets" rows="1"></textarea>
-            </div>
-			
-			<!-- Subfeature 1 -->
-            <div class="mb-3">
-                <h2>Subfeature 1</h2>
-                <label for="f3Subfeature1Name" class="form-label">Name</label>
-                <textarea class="form-control" id="f3Subfeature1Name" name="f3Subfeature1Name" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature1Spec" class="form-label">Level</label>
-                <textarea class="form-control" id="f3Subfeature1Spec" name="f3Subfeature1Spec" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature1Description" class="form-label">Description</label>
-                <textarea class="form-control" id="f3Subfeature1Description" name="f3Subfeature1Description" rows="2"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature1DevTime" class="form-label">Dev Time</label>
-                <input type="number" class="form-control" id="f3Subfeature1DevTime" name="f3Subfeature1DevTime">
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature1CodeArt" class="form-label">Code Art</label>
-                <input type="text" class="form-control" id="f3Subfeature1CodeArt" name="f3Subfeature1CodeArt">
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature1Submarkets" class="form-label">Submarkets</label>
-                <textarea class="form-control" id="f3Subfeature1Submarkets" name="f3Subfeature1Submarkets" rows="1"></textarea>
-            </div>
-			<!-- Subfeature 2 -->
-            <div class="mb-3">
-                <h2>Subfeature 2</h2>
-                <label for="f3Subfeature2Name" class="form-label">Name</label>
-                <textarea class="form-control" id="f3Subfeature2Name" name="f3Subfeature2Name" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature2Spec" class="form-label">Level</label>
-                <textarea class="form-control" id="f3Subfeature2Spec" name="f3Subfeature2Spec" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature2Description" class="form-label">Description</label>
-                <textarea class="form-control" id="f3Subfeature2Description" name="f3Subfeature2Description" rows="2"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature2DevTime" class="form-label">Dev Time</label>
-                <input type="number" class="form-control" id="f3Subfeature2DevTime" name="f3Subfeature2DevTime">
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature2CodeArt" class="form-label">Code Art</label>
-                <input type="text" class="form-control" id="f3Subfeature2CodeArt" name="f3Subfeature2CodeArt">
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature2Submarkets" class="form-label">Submarkets</label>
-                <textarea class="form-control" id="f3Subfeature2Submarkets" name="f3Subfeature2Submarkets" rows="1"></textarea>
-            </div>
-			<!-- Subfeature 1 -->
-            <div class="mb-3">
-                <h2>Subfeature 3</h2>
-                <label for="f3Subfeature3Name" class="form-label">Name</label>
-                <textarea class="form-control" id="f3Subfeature3Name" name="f3Subfeature3Name" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature3Spec" class="form-label">Level</label>
-                <textarea class="form-control" id="f3Subfeature3Spec" name="f3Subfeature3Spec" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature3Description" class="form-label">Description</label>
-                <textarea class="form-control" id="f3Subfeature3Description" name="f3Subfeature3Description" rows="2"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature3DevTime" class="form-label">Dev Time</label>
-                <input type="number" class="form-control" id="f3Subfeature3DevTime" name="f3Subfeature3DevTime">
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature3CodeArt" class="form-label">Code Art</label>
-                <input type="text" class="form-control" id="f3Subfeature3CodeArt" name="f3Subfeature3CodeArt">
-            </div>
-            <div class="mb-3">
-                <label for="f3Subfeature3Submarkets" class="form-label">Submarkets</label>
-                <textarea class="form-control" id="f3Subfeature3Submarkets" name="f3Subfeature3Submarkets" rows="1"></textarea>
             </div>
 
             <button type="button" class="btn btn-primary" onclick="downloadData()">Download Data</button>
@@ -462,18 +263,6 @@
             const Feature1DevTime = document.getElementById('Feature1DevTime').value;
             const Feature1CodeArt = document.getElementById('Feature1CodeArt').value;
             const Feature1Submarkets = document.getElementById('Feature1Submarkets').value;
-            const Feature2Name = document.getElementById('Feature2Name').value;
-            const Feature2Spec = document.getElementById('Feature2Spec').value;
-            const Feature2Description = document.getElementById('Feature2Description').value;
-            const Feature2DevTime = document.getElementById('Feature2DevTime').value;
-            const Feature2CodeArt = document.getElementById('Feature2CodeArt').value;
-            const Feature2Submarkets = document.getElementById('Feature2Submarkets').value;
-            const Feature3Name = document.getElementById('Feature3Name').value;
-            const Feature3Spec = document.getElementById('Feature3Spec').value;
-            const Feature3Description = document.getElementById('Feature3Description').value;
-            const Feature3DevTime = document.getElementById('Feature3DevTime').value;
-            const Feature3CodeArt = document.getElementById('Feature3CodeArt').value;
-            const Feature3Submarkets = document.getElementById('Feature3Submarkets').value;
 			
 			const f1Subfeature1Name = document.getElementById('f1Subfeature1Name').value;
 			const f1Subfeature1Spec = document.getElementById('f1Subfeature1Spec').value;
@@ -494,48 +283,12 @@
 			const f1Subfeature3CodeArt = document.getElementById('f1Subfeature3CodeArt').value;
 			const f1Subfeature3Submarkets = document.getElementById('f1Subfeature3Submarkets').value;
 			
-			const f2Subfeature1Name = document.getElementById('f2Subfeature1Name').value;
-			const f2Subfeature1Spec = document.getElementById('f2Subfeature1Spec').value;
-			const f2Subfeature1Description = document.getElementById('f2Subfeature1Description').value;
-			const f2Subfeature1DevTime = document.getElementById('f2Subfeature1DevTime').value;
-			const f2Subfeature1CodeArt = document.getElementById('f2Subfeature1CodeArt').value;
-			const f2Subfeature1Submarkets = document.getElementById('f2Subfeature1Submarkets').value;
-			const f2Subfeature2Name = document.getElementById('f2Subfeature2Name').value;
-			const f2Subfeature2Spec = document.getElementById('f2Subfeature2Spec').value;
-			const f2Subfeature2Description = document.getElementById('f2Subfeature2Description').value;
-			const f2Subfeature2DevTime = document.getElementById('f2Subfeature2DevTime').value;
-			const f2Subfeature2CodeArt = document.getElementById('f2Subfeature2CodeArt').value;
-			const f2Subfeature2Submarkets = document.getElementById('f2Subfeature2Submarkets').value;
-			const f2Subfeature3Name = document.getElementById('f2Subfeature3Name').value;
-			const f2Subfeature3Spec = document.getElementById('f2Subfeature3Spec').value;
-			const f2Subfeature3Description = document.getElementById('f2Subfeature3Description').value;
-			const f2Subfeature3DevTime = document.getElementById('f2Subfeature3DevTime').value;
-			const f2Subfeature3CodeArt = document.getElementById('f2Subfeature3CodeArt').value;
-			const f2Subfeature3Submarkets = document.getElementById('f2Subfeature3Submarkets').value;
 			
-			const f3Subfeature1Name = document.getElementById('f3Subfeature1Name').value;
-			const f3Subfeature1Spec = document.getElementById('f3Subfeature1Spec').value;
-			const f3Subfeature1Description = document.getElementById('f3Subfeature1Description').value;
-			const f3Subfeature1DevTime = document.getElementById('f3Subfeature1DevTime').value;
-			const f3Subfeature1CodeArt = document.getElementById('f3Subfeature1CodeArt').value;
-			const f3Subfeature1Submarkets = document.getElementById('f3Subfeature1Submarkets').value;
-			const f3Subfeature2Name = document.getElementById('f3Subfeature2Name').value;
-			const f3Subfeature2Spec = document.getElementById('f3Subfeature2Spec').value;
-			const f3Subfeature2Description = document.getElementById('f3Subfeature2Description').value;
-			const f3Subfeature2DevTime = document.getElementById('f3Subfeature2DevTime').value;
-			const f3Subfeature2CodeArt = document.getElementById('f3Subfeature2CodeArt').value;
-			const f3Subfeature2Submarkets = document.getElementById('f3Subfeature2Submarkets').value;
-			const f3Subfeature3Name = document.getElementById('f3Subfeature3Name').value;
-			const f3Subfeature3Spec = document.getElementById('f3Subfeature3Spec').value;
-			const f3Subfeature3Description = document.getElementById('f3Subfeature3Description').value;
-			const f3Subfeature3DevTime = document.getElementById('f3Subfeature3DevTime').value;
-			const f3Subfeature3CodeArt = document.getElementById('f3Subfeature3CodeArt').value;
-			const f3Subfeature3Submarkets = document.getElementById('f3Subfeature3Submarkets').value;
-			
-			// Function to format submarkets
+// Function to format submarkets
 function formatSubmarkets(value) {
     return `[${value.split(" ").map(word => word.trim()).join('; ')}]`;
 }
+
 function formatSubmarketNames(value) {
     return `[${value.split(" ").map(word => `"${word.trim()}"`).join('; ')}]`;
 }
@@ -547,16 +300,14 @@ function formatSubmarketsForDisplay(inputIds) {
     inputIds.forEach(id => {
         const inputElement = document.getElementById(id);
         const value = inputElement.value;
-       
+        // Formatting logic for display if needed
     });
 }
 
 // Array of all submarket input IDs
 const allSubmarketInputs = [
-    'Feature1Submarkets', 'Feature2Submarkets', 'Feature3Submarkets',
-    'f1Subfeature1Submarkets', 'f1Subfeature2Submarkets', 'f1Subfeature3Submarkets',
-    'f2Subfeature1Submarkets', 'f2Subfeature2Submarkets', 'f2Subfeature3Submarkets',
-    'f3Subfeature1Submarkets', 'f3Subfeature2Submarkets', 'f3Subfeature3Submarkets'
+    'Feature1Submarkets',
+    'f1Subfeature1Submarkets', 'f1Subfeature2Submarkets', 'f1Subfeature3Submarkets'
 ];
 
 // Format submarkets for display in text boxes
@@ -568,14 +319,14 @@ let data = `SoftwareType
         Name    "${Name}"
         Description    "${Description}"
         Random    ${Random}
-        OsSupport    ${OsSupport}
+        OSSupport    ${OsSupport}
         Popularity    ${Popularity}
         Retention    ${Retention}
         IdealPrice    ${IdealPrice}
         OptimalDevTime    ${OptimalDevTime}
         SubmarketNames    ${SubmarketNamesFormatted}
         Iterative    ${Iterative}
-        NameGenerator    ${NameGenerator}.txt
+        NameGenerator    ${NameGenerator}
         Features    [
             {
                 Name    ${Feature1Name}
@@ -608,74 +359,6 @@ let data = `SoftwareType
                         DevTime    ${f1Subfeature3DevTime}
                         CodeArt    ${f1Subfeature3CodeArt}
                         Submarkets    ${formatSubmarkets(document.getElementById('f1Subfeature3Submarkets').value)}
-                    }
-                ]
-            }
-            {
-                Name    ${Feature2Name}
-                Spec    ${Feature2Spec}
-                Description    "${Feature2Description}"
-                DevTime    ${Feature2DevTime}
-                CodeArt    ${Feature2CodeArt}
-                Submarkets    ${formatSubmarkets(document.getElementById('Feature2Submarkets').value)}
-                Features    [
-                    {
-                        Name    "${f2Subfeature1Name}"
-                        Level    ${f2Subfeature1Spec}
-                        Description    "${f2Subfeature1Description}"
-                        DevTime    ${f2Subfeature1DevTime}
-                        CodeArt    ${f2Subfeature1CodeArt}
-                        Submarkets    ${formatSubmarkets(document.getElementById('f2Subfeature1Submarkets').value)}
-                    }
-                    {
-                        Name    "${f2Subfeature2Name}"
-                        Level    ${f2Subfeature2Spec}
-                        Description    "${f2Subfeature2Description}"
-                        DevTime    ${f2Subfeature2DevTime}
-                        CodeArt    ${f2Subfeature2CodeArt}
-                        Submarkets    ${formatSubmarkets(document.getElementById('f2Subfeature2Submarkets').value)}
-                    }
-                    {
-                        Name    "${f2Subfeature3Name}"
-                        Level    ${f2Subfeature3Spec}
-                        Description    "${f2Subfeature3Description}"
-                        DevTime    ${f2Subfeature3DevTime}
-                        CodeArt    ${f2Subfeature3CodeArt}
-                        Submarkets    ${formatSubmarkets(document.getElementById('f2Subfeature3Submarkets').value)}
-                    }
-                ]
-            }
-            {
-                Name    ${Feature3Name}
-                Spec    ${Feature3Spec}
-                Description    "${Feature3Description}"
-                DevTime    ${Feature3DevTime}
-                CodeArt    ${Feature3CodeArt}
-                Submarkets    ${formatSubmarkets(document.getElementById('Feature3Submarkets').value)}
-                Features    [
-                    {
-                        Name    "${f3Subfeature1Name}"
-                        Level    ${f3Subfeature1Spec}
-                        Description    "${f3Subfeature1Description}"
-                        DevTime    ${f3Subfeature1DevTime}
-                        CodeArt    ${f3Subfeature1CodeArt}
-                        Submarkets    ${formatSubmarkets(document.getElementById('f3Subfeature1Submarkets').value)}
-                    }
-                    {
-                        Name    "${f3Subfeature2Name}"
-                        Level    ${f3Subfeature2Spec}
-                        Description    "${f3Subfeature2Description}"
-                        DevTime    ${f3Subfeature2DevTime}
-                        CodeArt    ${f3Subfeature2CodeArt}
-                        Submarkets    ${formatSubmarkets(document.getElementById('f3Subfeature2Submarkets').value)}
-                    }
-                    {
-                        Name    "${f3Subfeature3Name}"
-                        Level    ${f3Subfeature3Spec}
-                        Description    "${f3Subfeature3Description}"
-                        DevTime    ${f3Subfeature3DevTime}
-                        CodeArt    ${f3Subfeature3CodeArt}
-                        Submarkets    ${formatSubmarkets(document.getElementById('f3Subfeature3Submarkets').value)}
                     }
                 ]
             }
