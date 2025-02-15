@@ -1,10 +1,10 @@
 # Software Inc Mod Creator App
 
-This is a fork of the [Software Inc Mod Creator App]("https://github.com/KeyMillion/Software-Inc-Mod-Creator") that intends to bring a plug-and-play experience for users of all skill-levels. I would like to give thanks the original dev [KeyMillion]("https://github.com/KeyMillion") for providing the foundation for this app. 
+This is a fork of the [Software Inc Mod Creator App](https://github.com/KeyMillion/Software-Inc-Mod-Creator) that intends to bring a plug-and-play experience for users of all skill-levels. I would like to give thanks the original dev [KeyMillion](https://github.com/KeyMillion) for providing the foundation for this app. 
 
 ⬇️ **Check out the dev roadmap to see whats the future holds**
 
-[Development Roadmap]("https://trello.com/invite/b/67b04d343e8125f3c3b86cf7/ATTIae9cb82c3ac9c18a87bf807821e8e70863CB36B4/simca-dev-roadmap")
+[Development Roadmap](https://trello.com/invite/b/67b04d343e8125f3c3b86cf7/ATTIae9cb82c3ac9c18a87bf807821e8e70863CB36B4/simca-dev-roadmap)
 
 ## Table of Contents
 
