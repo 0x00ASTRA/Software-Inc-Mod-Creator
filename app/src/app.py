@@ -5,7 +5,7 @@ from fastapi.responses import FileResponse
 app = FastAPI()
 
 # Serve static files
-#app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
 # Serve the main HTML file at the root route
 @app.get("/")
