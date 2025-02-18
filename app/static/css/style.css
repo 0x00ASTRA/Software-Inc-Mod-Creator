@@ -1,0 +1,537 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin: 3.5rem;
+    padding: 0;
+    background: #f5f5f5; /* Updated to match theme's light background */
+    color: #333; /* Darker text for readability, aligned with theme */
+}
+
+.spacer {
+    height: 50px; /* Unchanged */
+    width: 100%; /* Unchanged */
+}
+
+.separator {
+    border: 0;
+    border-top: 2px solid #333; /* Updated color to match theme's darker tones */
+    margin: 20px 0; /* Unchanged */
+}
+
+/* Panel Styling */
+.panel {
+    background: white; /* Updated to match theme's clean white background */
+    border: none; /* Removed border to align with theme's shadow-based design */
+    padding: 12px 24px; /* Increased padding to match theme */
+    margin: 10px;
+    border-radius: 16px; /* Updated to match theme's rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Updated to match theme's subtle shadow */
+}
+
+/* Input Fields */
+.input-line {
+    padding: 8px;
+    color: #333; /* Updated to match theme's text color */
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 16px; /* Unchanged */
+    max-width: 80%;
+}
+
+.form-label {
+    display: block;
+    font-weight: 500; /* Slightly lighter weight to match theme */
+    margin-bottom: 8px;
+    color: #333; /* Updated to match theme */
+}
+
+.input-container {
+    display: flex;
+    align-items: center; /* Unchanged */
+    gap: 8px; /* Unchanged */
+}
+
+.input-container input {
+    flex: 1; /* Unchanged */
+    padding: 8px;
+    border: none; /* Updated to match theme's borderless inputs */
+    border-radius: 8px; /* Updated to match theme's rounded inputs */
+    background: #fff; /* Unchanged */
+    color: #333; /* Updated to match theme */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Added subtle shadow to match theme */
+}
+
+.input-container input:focus {
+    outline: none; /* Added to match theme's focus style */
+}
+
+.info-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.info-msg {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white; /* Updated to match theme */
+    border: none; /* Updated to match theme */
+    padding: 12px;
+    border-radius: 8px; /* Updated to match theme */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Updated to match theme */
+    min-width: 280px;
+    font-weight: normal;
+    z-index: 1000;
+    margin-bottom: 8px;
+    color: #333; /* Updated to match theme */
+}
+
+.info-tooltip:hover .info-msg {
+    display: block;
+}
+
+.info-icon {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.input-line img {
+    font-size: 16px; /* Unchanged */
+    margin-left: 8px; /* Unchanged */
+    color: inherit; /* Unchanged */
+    max-height: 24px;
+}
+
+/* Navigation Buttons */
+.navlink {
+    padding: 8px 14px;
+    font-size: 14px;
+    background: #f8f8f8; /* Updated to match theme's hover background */
+    border: none; /* Updated to match theme */
+    color: #333; /* Updated to match theme */
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px; /* Updated to match theme */
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Added to match theme */
+}
+
+.navlink:hover {
+    background: #f0fdf4; /* Updated to match theme's hover effect */
+    color: #82CD9B; /* Updated to match theme's accent color */
+}
+
+/* General Button Styling */
+.button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Unchanged */
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 500; /* Unchanged */
+    background: #f8f8f8; /* Updated to match theme */
+    border: none; /* Updated to match theme */
+    color: #333; /* Updated to match theme */
+    text-decoration: none;
+    border-radius: 8px; /* Updated to match theme */
+    transition: all 0.2s ease-in-out;
+    max-width: 120px;
+    max-height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Added to match theme */
+}
+
+/* Icon inside the button */
+.button-icon img {
+    font-size: 16px; /* Unchanged */
+    margin-left: 8px; /* Unchanged */
+    color: inherit; /* Unchanged */
+    max-height: 14px;
+}
+
+/* Hover Effect */
+.button-icon:hover {
+    background: #f0fdf4; /* Updated to match theme */
+    color: #82CD9B; /* Updated to match theme */
+}
+
+/* Home Button with Green Accent */
+#home-navlink.button-icon {
+    background: #82CD9B; /* Updated to match theme's green accent */
+    color: white; /* Updated to match theme */
+    border: none; /* Updated to match theme */
+}
+
+#home-navlink.button-icon:hover {
+    background: #6bb884; /* Darker shade for hover, derived from theme */
+}
+
+/* Home Button with Green Accent */
+#home-navlink {
+    background: #82CD9B; /* Updated to match theme */
+    color: white; /* Updated to match theme */
+    border: none; /* Updated to match theme */
+    border-radius: 8px; /* Updated to match theme */
+}
+
+#home-navlink:hover {
+    background: #6bb884; /* Darker shade for hover, derived from theme */
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    max-width: 900px; /* Added to match theme's table width */
+    margin: 0 auto; /* Added to center table like theme */
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 16px; /* Updated to match theme */
+    overflow: hidden;
+    background: white; /* Updated to match theme */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Added to match theme */
+}
+
+.table th, .table td {
+    border: none; /* Updated to match theme's borderless table */
+    padding: 12px 24px; /* Updated to match theme's padding */
+    text-align: left;
+}
+
+.table th {
+    background: linear-gradient(to right, #82CD9B, #82CD9B); /* Updated to match theme's gradient */
+    color: white; /* Updated to match theme */
+    font-weight: 500; /* Updated to match theme */
+}
+
+.table tr:hover td {
+    background: #f8f8f8; /* Updated to match theme's hover effect */
+}
+
+.table td::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.1); /* Updated to match theme */
+    opacity: 0; /* Updated to match theme */
+    transition: opacity 0.2s ease; /* Updated to match theme */
+}
+
+.table tr:hover td::after {
+    opacity: 1; /* Updated to match theme */
+}
+
+.table td:last-child::after {
+    display: none; /* Updated to match theme */
+}
+
+/* Status Indicators */
+.status-good {
+    color: #82CD9B; /* Updated to match theme's green */
+}
+
+.status-warning {
+    color: #e6a700; /* Unchanged */
+}
+
+.status-bad {
+    color: #ef4444; /* Updated to match theme's red */
+}
+
+simca-table {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.table-container {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th {
+    background: linear-gradient(to right, #82CD9B, #82CD9B);
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    padding: 12px 24px;
+}
+
+td {
+    padding: 12px 24px;
+    background: #fff;
+    position: relative;
+}
+
+tr:hover td {
+    background: #f8f8f8;
+}
+
+td::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.1); /* Subtle column separator */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.2s ease;
+}
+
+tr:hover td::after {
+    opacity: 1; /* Show the separator on hover */
+}
+
+td:last-child::after {
+    display: none; /* Avoid showing a separator on the last column */
+}
+
+input {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background: transparent;
+    color: #333;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.actions {
+    width: 48px;
+    text-align: center;
+}
+
+.remove-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    position: relative;
+    color: #ccc;
+}
+
+.remove-btn:hover {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.add-container {
+    padding: 12px 24px;
+    text-align: right;
+}
+
+.add-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    color: #82CD9B;
+    position: relative;
+}
+
+.add-btn:hover {
+    background: #f0fdf4;
+}
+
+.container {
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    flex-shrink: 0;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #82CD9B;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+}
+
+.input-range-slider {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+  .slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .range-slider {
+    width: 100%;
+    appearance: none;
+    height: 8px;
+    background: #ddd;
+    border-radius: 3.5rem;
+    outline: none;
+    transition: background-color 0.3s;
+  }
+  
+  .range-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff; /* White button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for the flat 3D effect */
+    cursor: pointer;
+    margin-top: -6px;
+  }
+  
+  .range-slider:focus::-webkit-slider-thumb {
+    background: #fff; /* White on focus */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Slightly darker shadow on focus */
+  }
+  
+  .range-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff; /* White button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for the flat 3D effect */
+    cursor: pointer;
+  }
+  
+  .range-slider::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 4px;
+  }
+  
+  .range-values {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    min-width: 50px; /* Prevent the text from squeezing the slider */
+  }
+  
+  .range-display {
+    font-weight: bold;
+    margin: 0 8px;
+    white-space: nowrap; /* Prevent text from breaking onto a new line */
+  }
+  
+  .description {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .slider-hstack {
+    display: flex;
+    gap: 16px; /* Space between sliders */
+    justify-content: space-between; /* Distribute sliders evenly across the container */
+    align-items: flex-start; /* Align sliders vertically in the middle */
+    width: 80%; /* Ensure it takes full width of its container */
+  }
+  
+  .input-range-slider {
+    flex-grow: 1; /* Make each slider take up available space */
+    max-width: 300px; /* Optional: Set a max width for each slider */
+    min-width: 150px; /* Optional: Set a minimum width to prevent sliders from shrinking too much */
+  }
+  
+  .slider-container {
+    width: 80%; /* Make the container fill the slider's available width */
+  }
+  
+  .range-slider {
+    width: 100%; /* Ensure the slider takes up the full width of its container */
+  }
+  
+  

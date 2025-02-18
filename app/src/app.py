@@ -1,8 +1,11 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
+from app.src.api.v1.routes import api_router
 
 app = FastAPI()
+
+app.include_router(api_router, prefix="/api/v1")
 
 # Serve static files
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
@@ -26,8 +29,8 @@ def app_namegenerator():
 
 @app.get("/software-type-mini")
 def app_softwareincmodcreatorsoftwaremini():
-    return FileResponse("app/ui/html/softwareIncModCreatorSoftwareMini.html")
+    return FileResponse("app/ui/html/software-type-mini.html")
 
 @app.get("/software-type")
 def app_softwareincmodcreatorsoftwaretype():
-    return FileResponse("app/ui/html/softwareIncModCreatorSoftwareType.html")
+    return FileResponse("app/ui/html/software-type.html")
